@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "435161457662",
+    "firebase_url": "https://charusatattendance.firebaseio.com",
+    "project_id": "charusatattendance",
+    "storage_bucket": "charusatattendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435161457662:android:acd11adb996968cf8a16af",
+        "android_client_info": {
+          "package_name": "com.example.charusatattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435161457662-2o5t1ham61g0hok6ec0792025nru1qlj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.charusatattendance",
+            "certificate_hash": "4abd689d513c0770845c9425b9e8229dde589263"
+          }
+        },
+        {
+          "client_id": "435161457662-55ntuvs67cl9ljlokoku815tmam6c5s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdrhlJvpawG2aCKaOUbACvp_uLVpr8kk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435161457662-55ntuvs67cl9ljlokoku815tmam6c5s3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
