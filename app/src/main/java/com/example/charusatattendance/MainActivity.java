@@ -15,35 +15,33 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference studentRef = database.getReference("student");
-    DatabaseReference adminRef= database.getReference("requested");
     DatabaseReference requested=database.getReference("requested");
-    EditText info;
-    Button submit;
+    Button teacher,student;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        submit=(Button) findViewById(R.id.btn_submit);
-        info=(EditText) findViewById(R.id.edt_submit);
-        submit.setOnClickListener(new View.OnClickListener() {
+        teacher=(Button) findViewById(R.id.btn_teacher);
+        student=(Button) findViewById(R.id.btn_student);
+
+        teacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strinfo = info.getText().toString();
-
-                if(TextUtils.isEmpty(strinfo)) {
-                    info.setError("Please request something");
-                    return;
-                }
-                else {
-                        String Key=requested.child("17ce049").push().getKey();
-                        requested.child("17ce049").child(Key).child("Information").setValue(strinfo);
-                        requested.child("17ce049").child(Key).child("Id").setValue(Key);
-                         requested.child("17ce049").child(Key).child("Status").setValue("requested");
-                    }
                 Intent i=new Intent(MainActivity.this,Admin.class);
                 startActivity(i);
+              //  finish();
+
+            }
+        });
+        student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,GoogleLoginStudent.class);
+                startActivity(i);
+                //finish();
+
             }
         });
 
