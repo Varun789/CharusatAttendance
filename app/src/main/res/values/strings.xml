@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">CharusatAttendance</string>
+    <string name="app_name">omm</string>
+    <string-array name="Acd_year">
+        <item>choose year</item>
+        <item>2019-2020</item>
+    </string-array>
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="counselor">
+        <item>choose</item>
+        <item>Dr.Ritesh Patel</item>
+        <item>Ms.Arpita Shah</item>
+        <item>Mr.Dhaval Bhoi</item>
+        <item>Mr.Mrugendrashingh Rahevar</item>
+    </string-array>
 </resources>

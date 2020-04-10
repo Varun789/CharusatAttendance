@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_side_submitted_form_review"
+    android:orientation="vertical"
+    android:background="@drawable/bothround">
+    <!--    android:background="@drawable/bothround">-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Form"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="50dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="120dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="0dp" />
+            <TextView
+                android:id="@+id/txt_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17CE001@charusat.edu.in"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="0dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student ID :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/txt_sid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17CE001"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Name : "
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jack Sparrow"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Academic Year :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/txt_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semester :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/txt_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Counsellor Name:"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/txt_counselor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kruti Dhyani"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Participated in :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_participate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seminar"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of event :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_typeofevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="National"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title of event :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/titleofevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mozila Workshop"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of Organizer :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CSPIT"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Event(From) :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_startdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23/02/2020"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Event(To) :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_enddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01/03/2020"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time of Event(From):"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8:00 AM"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time of Event(To):"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9:00 PM"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topic of work :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ML"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of Participation :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_type_of_participation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ML"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you received financial support from CHARUSAT/CSPIT :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_financial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any other information :"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="22dp"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/txt_otherinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#9A9A9A"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/popupbtn"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/popupbtn"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

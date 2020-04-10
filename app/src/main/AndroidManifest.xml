@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.charusatattendance">
+    package="com.example.charusatattendance.activities">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Charusat Attendance"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FillActivity"></activity>
+        <activity android:name=".admin_fully_approved_forms"></activity>
+        <activity android:name=".practisedownload" />
+        <activity android:name=".admin_approved_with_certificateupload" />
+        <activity android:name=".admin_rejected_form_review" />
+        <activity android:name=".student_fully_approved_form_review" />
+        <activity android:name=".admin_approved_form_review" />
+        <activity android:name=".admin_fully_approved_form_review" />
+        <activity android:name=".admin_side_submitted_form_review" />
+        <activity android:name=".admin_rejected_forms" />
+        <activity android:name=".admin_aprroved_forms" />
+        <activity android:name=".student_request_form" />
+        <activity android:name=".admin_main_page" />
+        <activity android:name=".fully_approved_form" />
+        <activity android:name=".admin_login_page" />
+        <activity android:name=".student_rejected_form_review" />
+        <activity android:name=".student_submitted_form_review" />
+        <activity android:name=".student_approved_form_review" />
+        <activity android:name=".student_rejected" />
+        <activity android:name=".student_approved" />
+        <activity android:name=".student_submitted" />
+        <activity android:name=".Main_student_layout" />
+        <activity android:name=".student_info" />
         <activity android:name=".GoogleLoginStudent" />
-        <activity android:name=".Formreview" />
-        <activity android:name=".Student" />
-        <activity android:name=".Admin" />
+        <activity android:name=".admin_side_submitted_forms" />
+
+        <service android:name="com.example.charusatattendance.classes.NotificationReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

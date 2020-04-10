@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_student_layout"
+    android:orientation="vertical"
+    android:background="@drawable/facultyback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/request_form"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#a1c4fd"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Form"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/submitted_form"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#a1c4fd"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submitted Forms"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/approved_form"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#a1c4fd">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approved Forms"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fully_approved_form"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#a1c4fd">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fully Approved Forms"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rejected_form"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#a1c4fd">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rejected Forms"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

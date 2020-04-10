@@ -1,16 +1,13 @@
-package com.example.charusatattendance;
+package com.example.charusatattendance.activities;
 
-import androidx.annotation.NonNull;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
+import com.example.charusatattendance.adapters.admin_fully_approved_adapter;
+import com.example.charusatattendance.classes.form_pojo;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,42 +16,39 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class Admin extends AppCompatActivity {
-
-
+public class admin_fully_approved_forms extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference formRef = database.getReference("forms");
-    private ArrayList<Form>forms;
+    private ArrayList<form_pojo> forms;
     private RecyclerView requested_recycler_view;
-    private RequestedAdapter adapter;
+    private admin_fully_approved_adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
+        setContentView(R.layout.activity_admin_fully_approved_forms);
         requested_recycler_view=findViewById(R.id.requested_recyclerview);
-//        requested_recycler_view.setHasFixedSize(true);
+        requested_recycler_view.setHasFixedSize(true);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         requested_recycler_view.setLayoutManager(manager);
-        forms=new ArrayList<Form>();
-        adapter=new RequestedAdapter(getApplicationContext(),forms);
-
+        forms=new ArrayList<form_pojo>();
+        adapter=new admin_fully_approved_adapter(getApplicationContext(),forms);
 
         requested_recycler_view.setAdapter(adapter);
 
 
-        formRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        formRef.orderByChild("form_status").equalTo("fapproved").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
                     for (DataSnapshot npsnapshot : dataSnapshot.getChildren()){
-                      Form l=npsnapshot.getValue(Form.class);
-                        Log.i("Form", l.event_name);
+                        form_pojo l = npsnapshot.getValue(form_pojo.class);
                         forms.add(l);
 
-                    adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetChanged();
                     }
-
+                    adapter=new admin_fully_approved_adapter(getApplicationContext(),forms);
+                    requested_recycler_view.setAdapter(adapter);
                 }
             }
 
@@ -63,7 +57,5 @@ public class Admin extends AppCompatActivity {
 
             }
         });
-
     }
 }
-

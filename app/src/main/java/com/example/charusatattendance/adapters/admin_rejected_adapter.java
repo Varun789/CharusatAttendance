@@ -1,4 +1,4 @@
-package com.example.charusatattendance;
+package com.example.charusatattendance.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,17 +10,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.charusatattendance.activities.R;
+import com.example.charusatattendance.activities.admin_rejected_form_review;
+import com.example.charusatattendance.classes.form_pojo;
+import com.example.charusatattendance.holders.RequestedHolder;
+import com.example.charusatattendance.interfaces.ItemClickListener;
 
 import java.util.ArrayList;
 
-
-
-public class RequestedAdapter extends RecyclerView.Adapter<RequestedHolder> {
+public class admin_rejected_adapter extends RecyclerView.Adapter<RequestedHolder> {
     Context c;
-    ArrayList<Form>request;
+    ArrayList<form_pojo> request;
 
-
-    public RequestedAdapter(Context c,ArrayList<Form>request)
+    public admin_rejected_adapter(Context c, ArrayList<form_pojo> request)
     {
         this.c=c;
         this.request=request;
@@ -35,27 +37,29 @@ public class RequestedAdapter extends RecyclerView.Adapter<RequestedHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RequestedHolder holder, final int position) {
-       //object of Requestedholder
-        //Pass Student Id and Semester
+    public void onBindViewHolder(@NonNull RequestedHolder holder, int position) {
         holder.sid.setText(request.get(position).getSid());
         holder.sem.setText(request.get(position).getSemester());
+        holder.event.setText(request.get(position).getEvent_name());
 
         holder.setItemClickListener(new ItemClickListener() {
 
-            Form f=request.get(position);
+            //form_pojo f=request.get(position);
+
+            //Send Object to the Form review.
 
             @Override
             public void onItemClickListener(View view, int position) {
-              Intent i =new Intent(c,Formreview.class);
+
+                Log.d("Coming in colour","Aa gaya!!");
+                Intent i = new Intent(c, admin_rejected_form_review.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                i.putExtra("form",f);
+                i.putExtra("form_key", request.get(position).getForm_key());
                 c.startActivity(i);
+
 
             }
         });
-
-
 
     }
 

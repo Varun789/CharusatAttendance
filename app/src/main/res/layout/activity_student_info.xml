@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".student_info"
+    android:background="@drawable/profileback">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Student Id"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txt_sid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:drawablePadding="10dp"
+        android:text="id"
+        android:textColor="#A9A9A9"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Student Name"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txt_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:drawablePadding="10dp"
+        android:text="Jack Sparrow"
+        android:textColor="#A9A9A9"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Counsellor name"
+        android:textSize="26dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/txt_consellor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:drawablePadding="10dp"
+        android:text="Rose fallon"
+        android:textColor="#A9A9A9"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="200dp"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/profilebutton"/>
+</LinearLayout>
